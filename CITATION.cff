@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "A Framework for Binary Classification Evaluation Metrics"
+authors:
+  - family-names: "Shirdel"
+    given-names: "Mohammad"
+  - family-names: "Di Mauro"
+    given-names: "Mario"
+  - family-names: "Liotta"
+    given-names: "Antonio"
+type: article
+year: 2025
+doi: "10.2139/ssrn.5779321"
+url: "https://ssrn.com/abstract=5779321"

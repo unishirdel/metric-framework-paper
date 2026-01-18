@@ -1,0 +1,10 @@
+name: metric-framework-paper
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - matplotlib
+  - seaborn
+  - sympy
+  - jupyter
