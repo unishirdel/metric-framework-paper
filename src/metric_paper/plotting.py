@@ -89,12 +89,17 @@ class HeatmapPlotter:
 
     def plot_all(self, matrices):
         for matrix in matrices.values():
-            self._plot(matrix)
+            self._plot(matrix, None)
 
-    def _plot(self, matrix):
+    def plot_one(self, matrix, save_path=None):
+        self._plot(matrix, save_path)
+
+    def _plot(self, matrix, save_path):
         ax = _heatmap_ax(matrix)
         _apply_ticks(ax, self.ticks)
         _apply_labels(self.title)
+        if save_path:
+            ax.figure.savefig(save_path, bbox_inches="tight")
         plt.show()
 
 
@@ -105,11 +110,16 @@ class IsoCurvePlotter:
 
     def plot_all(self, matrices, ref_values):
         for name, matrix in matrices.items():
-            self._plot(matrix, ref_values[name])
+            self._plot(matrix, ref_values[name], None)
 
-    def _plot(self, matrix, ref_value):
+    def plot_one(self, matrix, ref_value, save_path=None):
+        self._plot(matrix, ref_value, save_path)
+
+    def _plot(self, matrix, ref_value, save_path):
         value = float(ref_value)
         plt.figure(figsize=(6, 6))
         _iso_contours(matrix, value, self.grid)
         _iso_axes(self.title)
+        if save_path:
+            plt.savefig(save_path, bbox_inches="tight")
         plt.show()
