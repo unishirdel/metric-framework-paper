@@ -10,19 +10,19 @@ class RoiProfitParams:
     N_max: int
     V: float
 
+    def __post_init__(self):
+        if not (self.U > self.L):
+            raise ValueError("Require U > L")
+        if self.L <= 0:
+            raise ValueError("Require L > 0")
+        if self.N_max <= 0:
+            raise ValueError("Require N_max > 0")
+
     def mean(self):
         return 0.5 * (self.L + self.U)
 
     def expected_inv(self):
         return (np.log(self.U) - np.log(self.L)) / (self.U - self.L)
-
-    def __post_init__(self):
-        if not (self.U > self.L):
-            raise ValueError("Require U > L")
-        if self.L <= 0:
-            raise ValueError("Require L > 0 for expected_inv")
-        if self.N_max <= 0:
-            raise ValueError("Require N_max > 0")
 
 
 @dataclass(frozen=True)
