@@ -45,8 +45,8 @@ class FlipProbability:
         x_star = intersection_ipv(model_a, model_b)
         p = uniform_cdf(x_star, self.params)
         if base > 0:
-            return p if model_a.N > model_b.N else 1.0 - p
-        return 1.0 - p if model_a.N > model_b.N else p
+            return 1.0 - p if model_a.N > model_b.N else p
+        return p if model_a.N > model_b.N else 1.0 - p
 
 
 def uniform_cdf(x, params):
