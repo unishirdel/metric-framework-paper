@@ -1,5 +1,4 @@
 numpy
 matplotlib
-seaborn
 sympy
 jupyter
