@@ -1,4 +1,4 @@
-from .metric_generator import build_equation
+from .metric_generator import eta_expression, eta_string
 from .metrics import ReferencePoint, metric_matrices, reference_metrics
 from .plotting import (
     CurveGrid,
@@ -21,5 +21,6 @@ __all__ = [
     "build_curve_grid",
     "build_ticks",
     "set_plot_style",
-    "build_equation",
+    "eta_expression",
+    "eta_string",
 ]
