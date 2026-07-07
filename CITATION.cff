@@ -9,6 +9,9 @@ authors:
   - family-names: "Liotta"
     given-names: "Antonio"
 type: article
-year: 2025
-doi: "10.2139/ssrn.5779321"
-url: "https://ssrn.com/abstract=5779321"
+year: 2026
+journal: "Information Sciences"
+publisher:
+  name: "Elsevier"
+doi: "10.1016/j.ins.2026.123540"
+url: "https://www.sciencedirect.com/science/article/pii/S0020025526004718"

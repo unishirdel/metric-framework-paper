@@ -6,9 +6,11 @@ This repository provides notebooks and scripts to reproduce figures from the pap
 ## Paper
 - Title: A Framework for Binary Classification Evaluation Metrics
 - Authors: Mohammad Shirdel; Mario Di Mauro; Antonio Liotta
-- Venue/Year: submitted to Information Sciences, 2025
-- Preprint: SSRN 5779321
-- DOI: https://doi.org/10.2139/ssrn.5779321
+- Journal: Information Sciences
+- Year: 2026
+- Article number: 123540
+- Publisher: Elsevier
+- DOI: https://doi.org/10.1016/j.ins.2026.123540
 
 ## Repository layout
 - `notebooks/` : figure notebooks
@@ -103,4 +105,15 @@ python scripts/run_metric_generator.py --theta 1 0 0 1 --lambda 1 1 1 1
 ## Citation
 See `CITATION.cff`.
 
-## Acknowledgements
+```bibtex
+@article{shirdel2026framework,
+  title={A framework for binary classification evaluation metrics},
+  author={Shirdel, Mohammad and Di Mauro, Mario and Liotta, Antonio},
+  journal={Information Sciences},
+  pages={123540},
+  year={2026},
+  publisher={Elsevier},
+  doi={10.1016/j.ins.2026.123540},
+  url={https://www.sciencedirect.com/science/article/pii/S0020025526004718}
+}
+```
